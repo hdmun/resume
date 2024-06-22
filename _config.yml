@@ -52,8 +52,9 @@ github_username: hdmun
 # about_title: About Me (Use this to override about section title)
 about_profile_image: Directory of profile image (eg. images/profile.jpg)
 about_content: | # this will include new lines to allow paragraphs
-  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
+  12년차 게임 프로그래머입니다.
 
+#  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
 #  You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
 #    - Lists
 #    - Tables
@@ -66,17 +67,16 @@ content:
     content:
 
       - layout: left
+        border: weak
         title: 환세취호전 온라인
         sub_title: 게임 서버 프로그래머
         caption: 2023.04 ~ 현재
-        # link: 
+        # link: https://
         quote: >
           대규모 MMORPG 게임 서비스
         description: | # this will include new lines to allow paragraphs
           - 게임 컨텐츠, 시스템 서버 개발
-          - 업적 시스템 구현
-          - 버프 시스템 구현
-          - 매칭 시스템 구현
+          - 업적, 버프, 매칭 시스템 구현
 
       - layout: left
         title: 메이플스토리
@@ -84,20 +84,21 @@ content:
         caption: 2012.11 ~ 2022.10
         link: https://maplestory.nexon.com/
         additional_titles:
-          - title: C++, C#, Python, MS-SQL, Windows Server
+          - title: C++, C#, Python, MS-SQL
         quote: >
           20년 넘게 서비스 중인 대규모 PC MMORPG 게임 서비스
         description: | # this will include new lines to allow paragraphs
-          - 게임 컨텐츠 구현에 필요한 서버/클라이언트 개발
-          - Description of role
-          - Description of role
-          - Description of role
+          - 게임 시스템, 컨텐츠 서버/클라이언트 개발
+          - 게임 제작, 운영 관련 툴 개발
+          - 게임 서버 성능 분석 및 최적화, 어뷰징 유저 대응 관련 서버 개발
+          - jenkins 도입하여 배포 파이프라인 자동화
+          - 컨텐츠, 서버 성능 지표 통계 서버 개발 및 운영
 
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        # border: weak  # Value of `weak` will display a weak border below this item. # Any 
+        border: weak  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
         title: netty-cpp
         link: https://github.com/hdmun/netty-cpp
@@ -113,17 +114,25 @@ content:
         quote: >
           이벤트 기반 비동기 네트워크 애플리케이션 프레임워크인 netty를 C++로 포팅한 프로젝트
         description: | # this will include new lines to allow paragraphs
-          - 프로젝트 구현 설명
+          - 프로젝트 설명
 
-#  - title: Education
-#    layout: list
-#    content:
-#      - layout: left
-#        title: 경상대학교
-#        sub_title: 컴퓨터과학과 학사
-#        caption: 2007.03.02 ~ 2013.02.22
-#        description: | # this will include new lines to allow paragraphs
-#          - 재학 시절 작업했던 프로젝트들 나열
+      - layout: left
+        title: fbs-excel-addin
+        link: https://github.com/hdmun/fbs-excel-addin
+        quote: >
+          Excel 내 데이터들을 flatbuffer 바이너리로 직렬화하는 Excel Add-in 어플리케이션
+        description: | # this will include new lines to allow paragraphs
+          - 프로젝트 설명
+
+  - title: Education
+    layout: list
+    content:
+      - layout: left
+        title: 경상국립대학교
+        sub_title: 컴퓨터과학과 학사
+        caption: 2007.03.02 ~ 2013.02.22
+        description: | # this will include new lines to allow paragraphs
+          - 재학 시절 진행했던 프로젝트들 나열
 
 #  - title: A Little More About Me
 #    layout: text
