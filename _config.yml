@@ -62,60 +62,108 @@ about_content: | # this will include new lines to allow paragraphs
 #    - Images ![alt text](/images/landscape-trees.jpg "Trees")
 
 content:
-  - title: Experience
+  - title: 경력
     layout: list
     content:
 
       - layout: left
         border: weak
-        title: 환세취호전 온라인
-        sub_title: 게임 서버 프로그래머
-        caption: 2023.04 ~ 현재
+        title: 슈퍼캣
+        sub_title: 환세취호전 온라인
+        caption: 2023.04 ~ 2025.01
         # link: https://
+        additional_titles:
+          - title: 게임 서버 프로그래머
+          - title: C#, ASP.Net Core, DotNetty, Protobuf, Flatbuffer, Mysql, Redis
+
         quote: >
-          대규모 MMORPG 게임 서비스
+          모바일 MMORPG 게임 서비스
         description: | # this will include new lines to allow paragraphs
-          - 게임 컨텐츠, 시스템 서버 개발
-          - 업적, 버프, 매칭 시스템 구현
+          - 게임 서버 구조 설계 및 개선 작업
+          - 게임 서버 시스템 및 인게임 컨텐츠 개발
+          - 퍼블리싱 플랫폼 서비스, SDK 연동
+          - 봇 테스트를 통한 서버 성능 최적화
+
 
       - layout: left
-        title: 메이플스토리
-        sub_title: 게임 프로그래머
+        title: 넥슨코리아
+        sub_title: 국내 메이플스토리
         caption: 2012.11 ~ 2022.10
-        link: https://maplestory.nexon.com/
-        additional_titles:
-          - title: C++, C#, Python, MS-SQL
         quote: >
           20년 넘게 서비스 중인 대규모 PC MMORPG 게임 서비스
         description: | # this will include new lines to allow paragraphs
-          - 게임 시스템, 컨텐츠 서버/클라이언트 개발
-          - 게임 제작, 운영 관련 툴 개발
-          - 게임 서버 성능 분석 및 최적화, 어뷰징 유저 대응 관련 서버 개발
-          - jenkins 도입하여 배포 파이프라인 자동화
-          - 컨텐츠, 서버 성능 지표 통계 서버 개발 및 운영
+          게임 프로그래머로서 라이브 서비스를 위한 게임 컨텐츠 개발과 운영 업무를 수행했습니다.
 
-  - title: Projects # Title for the section
+      - layout: left
+        sub_title: 인프라 시스템, 서버 관제 시스템 개발 및 운영
+        caption: 2021.10 - 2022.10
+        additional_titles:
+          - title: C++, C#, MS-SQL
+
+        quote: >
+          인프라 관련 툴, 파이프라인 고도화, 서버 성능 및 컨텐츠 지표 관제
+        description: | # this will include new lines to allow paragraphs
+          - Jenkins를 사용해 패치 통합 파이프라인 구축, 자동화
+          - 인프라 엔지니어 툴 개발
+          - 컨텐츠, 서버 성능 지표 관제 업무 진행
+          - 지표 통계 서버 개발 및 운영
+
+      - layout: left
+        sub_title: 게임 시스템 개발
+        caption: 2015.10 - 2021.09
+        additional_titles:
+          - title: C++, C#, Python, MS-SQL
+
+        quote: >
+          게임 내 시스템 컨텐츠, 보안, 최적화 관련 개발
+        description: | # this will include new lines to allow paragraphs
+          - 게임 내 시스템 컨텐츠 클라/서버 로직 개발
+          - 어뷰징 유저 대응 관련 서버 로직 개발
+          - 어뷰징 패킷 분석, 취약점 대응
+          - 게임 서버 성능 분석 및 최적화
+          - 사내 서비스/모듈 클라/서버 연동
+          - 레거시 코드 리팩토링, 구조 개선
+
+      - layout: left
+        sub_title: 게임 컨텐츠 개발
+        caption: 2012.11 - 2015.09
+        additional_titles:
+          - title: C++, C#, MS-SQL
+
+        quote: >
+          인게임, 아웃게임 컨텐츠 서버/클라이언트 개발
+        description: | # this will include new lines to allow paragraphs
+          - 신규 보스 패턴, 인스턴스 던전 등 신규 컨텐츠 개발
+          - 미니 게임 형태의 이벤트 컨텐츠 개발
+          - 캐시 아이템, 유료화 관련 컨텐츠 개발
+          - 글로벌 통합 서버 컨텐츠 개발
+          - 맵, 퀘스트 등의 관련 데이터 편집 툴 개발
+
+
+  - title: 오픈소스 프로젝트
     layout: list # Type of content section (list/text)
     content:
-      - layout: left
-        border: weak  # Value of `weak` will display a weak border below this item. # Any 
-                      # other value (or no value) means no border will be displayed
-        title: netty-cpp
-        link: https://github.com/hdmun/netty-cpp
-        # link_text: Link Text
-        additional_links:
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            # icon: fab fa-github
-            url: https://hdmun.github.io/netty-cpp/
-          # 중복 가능
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        quote: >
-          이벤트 기반 비동기 네트워크 애플리케이션 프레임워크인 netty를 C++로 포팅한 프로젝트
-        description: | # this will include new lines to allow paragraphs
-          - 프로젝트 설명
+## TODO: netty-cpp 프로젝트 완성 되면 해제제
+#      - layout: left
+#        border: weak  # Value of `weak` will display a weak border below this item. # Any 
+#                      # other value (or no value) means no border will be displayed
+#        title: netty-cpp
+#        link: https://github.com/hdmun/netty-cpp
+#        # link_text: Link Text
+#        additional_links:
+#          - title:  Github page for project (eg. sproogen/modern-resume-theme)
+#            # icon: fab fa-github
+#            url: https://hdmun.github.io/netty-cpp/
+#          # 중복 가능
+#          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+#          #   icon: fab fa-github
+#          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+#        quote: >
+#          이벤트 기반 비동기 네트워크 애플리케이션 프레임워크인 netty를 C++로 포팅한 프로젝트
+#        description: | # this will include new lines to allow paragraphs
+#          - 프로젝트 설명
 
+## NOTE: 조금 더 다듬을 필요가 있음음
       - layout: left
         title: fbs-excel-addin
         link: https://github.com/hdmun/fbs-excel-addin
@@ -124,15 +172,14 @@ content:
         description: | # this will include new lines to allow paragraphs
           - 프로젝트 설명
 
-  - title: Education
+  - title: 교육
     layout: list
     content:
       - layout: left
         title: 경상국립대학교
-        sub_title: 컴퓨터과학과 학사
         caption: 2007.03.02 ~ 2013.02.22
         description: | # this will include new lines to allow paragraphs
-          - 재학 시절 진행했던 프로젝트들 나열
+          - 컴퓨터과학과 학사 졸업
 
 #  - title: A Little More About Me
 #    layout: text
